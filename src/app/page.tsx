@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { setTimeout } from "timers/promises";
 
 export default function Home() {
   const [text1, setText1] = useState("")
@@ -20,14 +21,15 @@ export default function Home() {
   };
 
 
+
   return (
-    <main className="flex bg-yellow-500 w-full  text-center h-screen items-center justify-center p-[5%]">
+    <main className="flex bg-yellow-200 w-full  text-center h-screen items-center justify-center p-[5%]">
       <div className="jokesw-full">
         <p className="text-sm mb-6 underline">Random69</p>
-        <h1 className="text-3xl font-bold">{text1}</h1>
+        <h1 className="text-3xl font-bold mt-4">{text1}</h1>
         <p className="text-2xl">{text2}</p>
 
-        <button className="ring-2 ring-white text-sm mt-6 px-4 py-2 rounded-3xl" onClick={click} >New Jokes</button>
+        <button className="ring-2 bg-yellow-400 ring-yelow-700 text-sm mt-6 px-4 py-2 rounded-3xl" onClick={click} >New Jokes</button>
       </div>
     </main>
   );
