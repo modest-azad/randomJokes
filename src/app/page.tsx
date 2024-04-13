@@ -25,6 +25,7 @@ export default function Home() {
   return (
     <main className="flex bg-yellow-500 text-center h-screen items-center justify-center p-24">
       <div className="jokes">
+        <p className="text-sm mb-6 underline">Randome69 Jokes</p>
         <h1 className="text-3xl font-bold">{text1}</h1>
         <p className="text-2xl">{text2}</p>
 
