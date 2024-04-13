@@ -27,7 +27,7 @@ export default function Home() {
       <div className="jokesw-full">
         <p className="text-sm mb-6 underline">Random69</p>
         <h1 className="text-3xl font-bold mt-4">{text1}</h1>
-        <p className="text-2xl">{text2}</p>
+        <p className="text-2xl mt-4">{text2}</p>
 
         <button className="ring-2 bg-yellow-200 ring-yelow-700 text-sm mt-6 px-4 py-2 rounded-3xl" onClick={click} >New Jokes</button>
       </div>
